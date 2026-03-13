@@ -97,12 +97,6 @@ function Cases () {
                         ))
                     }
                 </div>
-
-                <AnimatePresence>
-                    {
-                        sele
-                    }
-                </AnimatePresence>
             </div>
         </section>
     );

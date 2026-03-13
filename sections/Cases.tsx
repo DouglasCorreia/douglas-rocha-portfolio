@@ -3,12 +3,18 @@
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import casesData from '../data/cases.json';
+
+type CaseTagsItem = {
+    title: string;
+    url: string;
+}
 
 type CaseItem = {
     id: number;
     title: string;
     image: string;
-    tags: string[];
+    tags: CaseTagsItem[];
     link: string;
     description: string;
 }
@@ -16,16 +22,7 @@ type CaseItem = {
 function Cases () {
     const [selectedCase, setSelectedCase] = useState<number | null>(null);
 
-    const cases:CaseItem[] = [
-        {
-            id: 1,
-            title: "Nicola Farmácias",
-            image: "/img/cases/case-tray-nicola-farmacia.jpeg",
-            tags: ["E-commerce", "Tray Commerce", "Agência Serie A"],
-            description: "dsdsds",
-            link: "https://www.nicolafarmacias.com.br/"
-        }
-    ]
+    const cases: CaseItem[] = casesData;
 
     const cardVariants = {
         hidden: { opacity: 0, y: 30 },
@@ -35,6 +32,8 @@ function Cases () {
             transition: { delay: i * 0.15, duration: 0.5 },
         }),
     };
+
+    const activeCase = cases.find((c) => c.id === selectedCase);
 
     return (
        <section id="cases">
@@ -47,10 +46,10 @@ function Cases () {
 
                 <div className="grid grid-cols-12 gap-4">
                     {
-                        cases.map((c, index) => (
+                        cases.slice(0,6).map((c, index) => (
                             <motion.div
                                 key={c.id}
-                                className="col-span-4 case-item bg-white rounded-lg"
+                                className="col-span-12 sm:col-span-6 lg:col-span-4 case-item bg-white rounded-lg flex flex-col justify-between"
                                 custom={index}
                                 initial="hidden"
                                 whileInView="visible"
@@ -74,9 +73,13 @@ function Cases () {
                                             {c.tags.map((tag, i) => (
                                                 <li
                                                     key={ i }
-                                                    className="px-3 py-1 rounded-xl bg-saffron-300 text-sm text-black-800"
+                                                    className="px-3 py-1 rounded-full bg-saffron-400 text-sm text-black-800"
                                                 >
-                                                    { tag }
+                                                    {
+                                                        tag.url 
+                                                        ? <a href={tag.url} target="_blank" rel="noopener noreferer">{tag.title}</a> 
+                                                        : tag.title
+                                                    }
                                                 </li>
                                             ))}
                                         </ul>
@@ -88,7 +91,7 @@ function Cases () {
                                         onClick={() => {
                                             setSelectedCase(c.id)
                                         }}
-                                        className="mx-auto cursor-pointer flex flex-wrap items-center justify-center bg-black-700 text-white px-6 h-9 text-md font-normal rounded-2xl"
+                                        className="mx-auto cursor-pointer flex flex-wrap items-center justify-center bg-black-700 text-white px-6 h-9 text-md font-normal rounded-full"
                                     >
                                         Ver mais detalhes
                                     </button>
@@ -97,6 +100,74 @@ function Cases () {
                         ))
                     }
                 </div>
+
+                <AnimatePresence>
+                    {selectedCase && activeCase && (
+                        <motion.div
+                            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={() => setSelectedCase(null)}
+                        >
+                            <motion.div
+                                className="grid grid-cols-2 lg:grid-cols-12 gap-8 bg-white rounded-xl max-w-6xl w-11/12 p-4 relative"
+                                initial={{ scale: 0.8, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                exit={{ scale: 0.8, opacity: 0 }}
+                                transition={{ duration: 0.3 }}
+                                onClick={(e) => e.stopPropagation()}
+                            >
+                                <button
+                                    onClick={() => setSelectedCase(null)}
+                                    className="absolute top-4 right-4 text-black text-xl cursor-pointer"
+                                >
+                                    ✕
+                                </button>
+
+                                <div className="col-span-2 lg:col-span-6">
+                                    <Image
+                                        src={activeCase.image}
+                                        alt={activeCase.title}
+                                        width={800}
+                                        height={450}
+                                        className="w-full rounded-lg mb-4"
+                                    />
+                                </div>
+
+                                <div className="col-span-2 lg:col-span-6">
+                                    <div className="flex flex-wrap gap-2 mb-4">
+                                        {activeCase.tags.map((tag, i) => (
+                                            <span
+                                            key={i}
+                                            className="px-3 py-1 rounded-full bg-saffron-400 text-xs text-black"
+                                            >
+                                                {
+                                                    tag.url 
+                                                    ? <a href={tag.url} target="_blank" rel="noopener noreferer">{tag.title}</a> 
+                                                    : tag.title
+                                                }
+                                            </span>
+                                        ))}
+                                    </div>
+
+                                    <h3 className="text-2xl font-bold mb-3">{activeCase.title}</h3>
+
+                                    <div className="*:text-gray-700 *:mb-4 *:last-of-type:mb-0 *:text-sm max-sm:overflow-y-auto max-sm:max-h-60" dangerouslySetInnerHTML={{ __html: activeCase.description }} />
+
+                                    <a
+                                        href={activeCase.link}
+                                        target="_blank"
+                                        rel="noopener noreferer"
+                                        className="inline-block bg-black-700 text-md text-white px-6 py-2 rounded-full mt-4"
+                                    >
+                                        Visitar projeto
+                                    </a>
+                                </div>
+                            </motion.div>
+                        </motion.div>
+                    )}
+                    </AnimatePresence>
             </div>
         </section>
     );

@@ -1,0 +1,176 @@
+[
+    {
+        "id": 1,
+        "title": "Nicola Farmácias",
+        "image": "/img/cases/case-tray-nicola-farmacia.jpeg",
+        "link": "https://www.nicolafarmacias.com.br/",
+        "tags": [
+            {
+                "title": "E-commerce",
+                "url": ""
+            },
+            {
+                "title": "Tray Commerce",
+                "url": ""
+            },
+            {
+                "title": "Empresa",
+                "url": ""
+            },
+            {
+                "title": "Projeto Profissional",
+                "url": ""
+            },
+            {
+                "title": "Agência Serie A",
+                "url": "https://seriea.digital/"
+            }
+        ],
+        "description": "<p>E-commerce de medicamentos manipulados desenvolvido na plataforma Tray Commerce. O projeto foi realizado enquanto eu atuava como desenvolvedor na agência Série A, assumindo o papel de desenvolvedor principal, responsável por todo o desenvolvimento do site para uma empresa cliente.</p><p>O objetivo foi criar uma experiência de compra online prática, intuitiva e agradável, com design moderno e totalmente responsivo, otimização da experiência do usuário em diferentes dispositivos. O desenvolvimento contemplou todas as etapas, desde a exposição dos produtos até o checkout, garantindo usabilidade, performance e eficiência no processo de compra.</p>"
+    },
+    {
+        "id": 2,
+        "title": "Codex Home",
+        "image": "/img/cases/case-tray-codex-home.jpg",
+        "link": "https://www.codexhome.com.br/",
+        "tags": [
+            {
+                "title": "E-commerce",
+                "url": ""
+            },
+            {
+                "title": "Tray Commerce",
+                "url": ""
+            },
+            {
+                "title": "Empresa",
+                "url": ""
+            },
+            {
+                "title": "Projeto Profissional",
+                "url": ""
+            },
+            {
+                "title": "Agência Serie A",
+                "url": "https://seriea.digital/"
+            }
+        ],
+        "description": "<p>E-commerce de móveis desenvolvido na plataforma Tray Commerce. O projeto foi realizado enquanto eu atuava como desenvolvedor na agência Série A, assumindo o papel de desenvolvedor principal, responsável por todo o desenvolvimento do site para uma empresa cliente.</p><p>O objetivo foi criar uma experiência de compra online prática, intuitiva e agradável, com design moderno e totalmente responsivo, otimização da experiência do usuário em diferentes dispositivos. O desenvolvimento contemplou todas as etapas, desde a exposição dos produtos até o checkout, garantindo usabilidade, performance e eficiência no processo de compra.</p>"
+    },
+    {
+        "id": 3,
+        "title": "Volauto",
+        "image": "/img/cases/case-wake-volauto.jpg",
+        "link": "https://www.volauto.com.br/",
+        "tags": [
+            {
+                "title": "E-commerce",
+                "url": ""
+            },
+            {
+                "title": "Wake Commerce",
+                "url": ""
+            },
+            {
+                "title": "Empresa",
+                "url": ""
+            },
+            {
+                "title": "Projeto Profissional",
+                "url": ""
+            },
+            {
+                "title": "Agência Serie A",
+                "url": "https://seriea.digital/"
+            }
+        ],
+        "description": "<p>E-commerce de peças automotivas desenvolvido na plataforma Wake Commerce. O projeto foi realizado enquanto eu atuava como desenvolvedor na agência Série A, assumindo o papel de desenvolvedor principal, responsável por todo o desenvolvimento do site para uma empresa cliente.</p><p>O objetivo foi criar uma experiência de compra online prática, intuitiva e agradável, com design moderno e totalmente responsivo, otimização da experiência do usuário em diferentes dispositivos. O desenvolvimento contemplou todas as etapas, desde a exposição dos produtos até o checkout, garantindo usabilidade, performance e eficiência no processo de compra.</p>"
+    },
+    {
+        "id": 4,
+        "title": "Vasart",
+        "image": "/img/cases/case-wake-vasart.jpg",
+        "link": "https://www.vasart.com.br/",
+        "tags": [
+            {
+                "title": "E-commerce",
+                "url": ""
+            },
+            {
+                "title": "Wake Commerce",
+                "url": ""
+            },
+            {
+                "title": "Empresa",
+                "url": ""
+            },
+            {
+                "title": "Projeto Profissional",
+                "url": ""
+            },
+            {
+                "title": "Agência Serie A",
+                "url": "https://seriea.digital/"
+            }
+        ],
+        "description": "<p>E-commerce de plantas, vasos e acessórios desenvolvido na plataforma Wake Commerce. O projeto foi realizado enquanto eu atuava como desenvolvedor na agência Série A, assumindo o papel de desenvolvedor principal, responsável por todo o desenvolvimento do site para uma empresa cliente.</p><p>O objetivo foi criar uma experiência de compra online prática, intuitiva e agradável, com design moderno e totalmente responsivo, otimização da experiência do usuário em diferentes dispositivos. O desenvolvimento contemplou todas as etapas, desde a exposição dos produtos até o checkout, garantindo usabilidade, performance e eficiência no processo de compra.</p>"
+    },
+    {
+        "id": 5,
+        "title": "Approve",
+        "image": "/img/cases/case-nuvem-approve.jpg",
+        "link": "https://www.justapprove.com.br/",
+        "tags": [
+            {
+                "title": "E-commerce",
+                "url": ""
+            },
+            {
+                "title": "Nuvem Shop",
+                "url": ""
+            },
+            {
+                "title": "Empresa",
+                "url": ""
+            },
+            {
+                "title": "Projeto Profissional",
+                "url": ""
+            },
+            {
+                "title": "Agência Serie A",
+                "url": "https://seriea.digital/"
+            }
+        ],
+        "description": "<p>E-commerce de moda desenvolvido na plataforma Nuvem Shop. O projeto foi realizado enquanto eu atuava como desenvolvedor na agência Série A, assumindo o papel de desenvolvedor principal, responsável por todo o desenvolvimento do site para uma empresa cliente.</p><p>O objetivo foi criar uma experiência de compra online prática, intuitiva e agradável, com design moderno e totalmente responsivo, otimização da experiência do usuário em diferentes dispositivos. O desenvolvimento contemplou todas as etapas, desde a exposição dos produtos até o checkout, garantindo usabilidade, performance e eficiência no processo de compra.</p>"
+    },
+    {
+        "id": 6,
+        "title": "Pokedex",
+        "image": "/img/cases/case-personal-pokedex.jpg",
+        "link": "https://pokemon-pokedex-ten-flame.vercel.app/",
+        "tags": [
+            {
+                "title": "API",
+                "url": ""
+            },
+            {
+                "title": "React",
+                "url": ""
+            },
+            {
+                "title": "Tailwind CSS",
+                "url": ""
+            },
+            {
+                "title": "Axios",
+                "url": ""
+            },
+            {
+                "title": "Projeto Pessoal",
+                "url": ""
+            }
+        ],
+        "description": "<p>Projeto pessoal desenvolvido para praticar consumo de APIs e desenvolvimento front-end. A aplicação utiliza a Poke API para exibir informações detalhadas sobre Pokémon, incluindo imagens, tipos, habilidades e estatísticas.</p><p>O objetivo do projeto foi criar uma interface intuitiva e responsiva, permitindo aos usuários buscar e explorar Pokémon de forma prática e agradável. Durante o desenvolvimento, foram aplicados conceitos de consumo de APIs, gerenciamento de estado, renderização dinâmica e boas práticas de UI/UX. O projeto ainda não está finalizado, sempre aproveitando para criar mais features conforme o tempo livre.</p>"
+    }
+]

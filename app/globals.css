@@ -162,3 +162,15 @@ textarea{
 section{
   @apply min-h-[100dvh] py-8;
 }
+
+.page-institutional{
+  @apply !pt-30;
+}
+
+.page-institutional h2{
+ @apply text-white font-semibold text-2xl mb-3.5;
+}
+
+.page-institutional p{
+  @apply text-white font-normal text-sm leading-6 mb-2;
+}

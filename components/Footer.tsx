@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaLinkedinIn, FaRegEnvelope, FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
@@ -15,6 +16,21 @@ function Footer() {
                         className="w-full mx-auto lg:mx-0 max-w-28 h-auto"
                         loading="lazy"
                     />
+                </div>
+
+                <div className="footer-contact w-full lg:w-1/4 mt-4 lg:mt-0">
+                    <h4 className="block leading-none font-semibold text-lg text-white mb-4 text-center lg:text-left">Institucional</h4>
+
+                    <ul className="*:mb-2 *:last-of-type:mb-0">
+                        <li className="leading-none">
+                            <Link
+                                href="/termos-de-uso"
+                                className="flex items-center justify-center lg:justify-start gap-x-1 text-sm text-white transition-colors duration-200 lg:hover:text-anakiwa-300"
+                            >
+                                Termos de uso
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
 
                 <div className="footer-contact w-full lg:w-1/4 mt-4 lg:mt-0">

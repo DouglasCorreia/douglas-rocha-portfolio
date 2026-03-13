@@ -13,7 +13,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Douglas Rocha - Desenvolvedor Front-end",
+  title: "DRF - Doug Rock Front-end",
   description: "Desenvolvedor Front-End com quase 8 anos de experiência transformando ideias em e-commerces, sites institucionais e blogs de alta performance que geram resultados reais para o negócio.",
 };
 

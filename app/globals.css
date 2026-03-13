@@ -1,15 +1,133 @@
 @import "tailwindcss";
 
+@theme {
+  --font-roboto: 'Roboto', 'system-ui', 'sans-serif';
+  --font-montserrat: 'Montserrat', 'system-ui', 'sans-serif';
+
+  --color-anakiwa-50: #f0f9ff;
+  --color-anakiwa-100: #dff2ff;
+  --color-anakiwa-200: #b8e7ff;
+  --color-anakiwa-300: #96deff;
+  --color-anakiwa-400: #33c1fd;
+  --color-anakiwa-500: #09a9ee;
+  --color-anakiwa-600: #0087cc;
+  --color-anakiwa-700: #006ba5;
+  --color-anakiwa-800: #045b88;
+  --color-anakiwa-900: #0a4c70;
+  --color-anakiwa-950: #06304b;
+
+  --color-saffron-50: #fefde8;
+  --color-saffron-100: #fffcc2;
+  --color-saffron-200: #fff788;
+  --color-saffron-300: #ffe944;
+  --color-saffron-400: #fed711;
+  --color-saffron-500: #efbf04;
+  --color-saffron-600: #ce9300;
+  --color-saffron-700: #a46804;
+  --color-saffron-800: #87520c;
+  --color-saffron-900: #734310;
+  --color-saffron-950: #432205;
+
+  --color-black-50: #fafafa;
+  --color-black-100: #f5f5f5;
+  --color-black-200: #e6e6e6;
+  --color-black-300: #d6d6d6;
+  --color-black-400: #a5a5a5;
+  --color-black-500: #767676;
+  --color-black-600: #575757;
+  --color-black-700: #434343;
+  --color-black-800: #292929;
+  --color-black-900: #1a1a1a;
+  --color-black-950: #000000;
+
+  --color-woodsmoke-50: #fafafa;
+  --color-woodsmoke-100: #f5f5f5;
+  --color-woodsmoke-200: #e6e6e6;
+  --color-woodsmoke-300: #d3d3d3;
+  --color-woodsmoke-400: #a3a3a3;
+  --color-woodsmoke-500: #727272;
+  --color-woodsmoke-600: #535353;
+  --color-woodsmoke-700: #404040;
+  --color-woodsmoke-800: #272727;
+  --color-woodsmoke-900: #131313;
+  --color-woodsmoke-950: #0b0b0b;
+
+  --color-ebony-clay-50: #f4f6fa;
+  --color-ebony-clay-100: #e6ebf3;
+  --color-ebony-clay-200: #d3daea;
+  --color-ebony-clay-300: #b5c3db;
+  --color-ebony-clay-400: #91a4c9;
+  --color-ebony-clay-500: #7789ba;
+  --color-ebony-clay-600: #6473ac;
+  --color-ebony-clay-700: #59639c;
+  --color-ebony-clay-800: #4c5381;
+  --color-ebony-clay-900: #404768;
+  --color-ebony-clay-950: #303349;
+
+  --text-md: 16px;
+
+  --container-center: true;
+  --container-padding: 15px;
+
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 992px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
+}
+
+@layer utilities {
+  .container {
+     @apply mx-auto px-4 xs:max-w-[480px] sm:max-w-[768px] md:max-w-[992px] lg:max-w-[1024px] xl:max-w-[1200px];
+  }
+
+  .title{
+    @apply block leading-none text-white text-center text-4xl font-bold uppercase;
+  }
+
+  .input-field{
+    @apply flex flex-wrap items-center w-full h-12 rounded-xl text-white bg-black-700 border-none px-4 py-2 placeholder:text-white;
+  }
+}
+
+@media (min-width: 480px) {
+  :root {
+    --container-max-width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-max-width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --container-max-width: 992px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-max-width: 1024px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --container-max-width: 1200px;
+  }
+}
+
 :root {
-  --background: #ffffff;
+  --background: #303349;
   --foreground: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +137,28 @@
   }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-black-800);
+  font-family: var(--font-montserrat);
+}
+
+ul, li{
+  @apply list-none;
+}
+
+input:focus,
+textarea:focus{
+  @apply outline-2 outline-offset-2 outline-black-500;
+}
+
+textarea{
+  @apply min-h-48;
+}
+
+section{
+  @apply min-h-[100dvh] py-8;
 }

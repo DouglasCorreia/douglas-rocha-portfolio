@@ -4,9 +4,11 @@ import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { IMaskInput } from "react-imask";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function Contact () {
-    const [status, setStatus] = useState<"loading" | "success" | "error" | "" | null>(null);
+    const [status, setStatus] = useState<"loading" | "success" | "error" | "error-recaptcha" | "" | null>(null);
+    const [captchaValue, setCaptchaValue] = useState<string | null>(null);
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -21,6 +23,16 @@ function Contact () {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setStatus("loading");
+
+        if (!captchaValue) {
+            setStatus("error-recaptcha");
+
+            setTimeout(() => {
+                setStatus("");
+            }, 3000);
+            
+            return;
+        }
 
         try {
             const res = await fetch("/api/contact", {
@@ -147,6 +159,11 @@ function Contact () {
                                 rows={5}
                             />
 
+                            <ReCAPTCHA
+                                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+                                onChange={(value: string | null) => setCaptchaValue(value)}
+                            />
+
                             <motion.button
                                 custom={3}
                                 variants={fadeUp}
@@ -160,6 +177,7 @@ function Contact () {
                         </form>
 
                         {status === "success" && <p className="mt-4 block leading-none text-center py-3.5 text-white bg-green-400">Mensagem enviada!</p>}
+                        {status === "error-recaptcha" && <p className="mt-4 block leading-none text-center py-3.5 text-white bg-red-400">Por favor, confirme que você não é um robô!</p>}
                         {status === "error" && <p className="mt-4 block leading-none text-center py-3.5 text-white bg-red-400">Erro ao enviar.</p>}
                     </div>
                 </motion.div>

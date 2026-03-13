@@ -104,7 +104,7 @@ function Skills() {
     ]
 
     return (
-        <section id="skills">
+        <section id="skills" className="bg-gradient-to-b from-black-900 to-black-800">
             <div className="container">
                 <div className="mb-12">
                     <h2 className="title">Habilidades</h2>

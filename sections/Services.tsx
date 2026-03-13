@@ -1,37 +1,18 @@
 import ServicesCard from "@/components/services/ServicesCard";
 import ServicesCardAnimatedWrapper from "@/components/services/ServicesCardAnimatedWrapper";
+import servicesData from '../data/services.json';
+
+type servicesItem = {
+    title: string;
+    description: string;
+    icon: string;
+}
 
 function Services() {
-    const services = [
-        {
-            title: "Criação de sites",
-            description: "Criação de sites sob medida para seu negócio. Desenvolvo websites modernos, responsivos e com design personalizado para oferecer a melhor experiência para seus usuários. Seja para um site institucional ou portfólio, cada projeto é pensado para alinhar estética e funcionalidade às suas necessidades.",
-            icon: "site"
-        },
-        {
-            title: "E-commerces",
-            description: "Criação de lojas online profissionais e otimizadas em plataformas como Wake Commerce, Tray Commerce, UAPPI, Olist VNDA, Yampi, Nuvem Shop e WooCommerce. Escolho a plataforma ideal para seu negócio, garantindo design intuitivo, integração de pagamento e funcionalidades escaláveis, tudo focado em converter visitantes em clientes.",
-            icon: 'cart'
-        },
-        {
-            title: "Blog",
-            description: "Criação de blogs personalizados e fáceis de gerenciar com WordPress. Ofereço design responsivo, SEO otimizado e navegação fluida para ajudar seu conteúdo a atrair mais leitores e alcançar um bom posicionamento nos motores de busca.",
-            icon: 'blog'
-        },
-        {
-            title: "Landing Pages",
-            description: "Maximize suas conversões com landing pages criadas para resultados. Se você está lançando um produto, serviço ou campanha, crio páginas otimizadas com foco na ação do usuário. Design cativante, conteúdo direto e chamadas para ação eficientes são alguns dos diferenciais das minhas páginas.",
-            icon: 'page'
-        },
-        {
-            title: "Sustentação",
-            description: "Manutenção contínua para garantir o bom funcionamento do seu site. Ofereço serviços de atualização, segurança e correção de bugs, mantendo seu site sempre rápido e atualizado. Não se preocupe com problemas técnicos, eu cuido disso para você.",
-            icon: 'gear'
-        }
-    ]
+    const services:servicesItem[] = servicesData;
 
     return (
-        <section id="services">
+        <section className="bg-gradient-to-b from-black-900 to-black-800" id="services">
             <div className="container">
                 <div className="mb-12">
                     <h2 className="title">Serviços</h2>

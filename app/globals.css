@@ -160,7 +160,7 @@ textarea{
 }
 
 section{
-  @apply min-h-[100dvh] py-8;
+  @apply py-8;
 }
 
 .page-institutional{

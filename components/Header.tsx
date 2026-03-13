@@ -2,13 +2,30 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect  } from "react";
 
 function Header() {
     const [showMenu, setShowMenu] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        }
+    }, [])
 
     return (
-        <header className="header fixed top-0 left-0 w-full py-4 z-20">
+        <header className={`header fixed top-0 left-0 w-full py-4 z-20 transition-colors duration-200 ease-in lg:hover:bg-black-800 ${scrolled ? "bg-black-800" : "bg-transparent" }`}>
             <div className="container">
                 <div className="flex flex-wrap items-center">
                     <div className="header-log w-1/2 lg:w-1/5">
@@ -18,7 +35,7 @@ function Header() {
                                 alt="Logo do desenvolvedor front-end Douglas Rocha"
                                 width={80}
                                 height={85}
-                                className="w-full max-w-[85px] h-auto"
+                                className={`w-full h-auto transition-all duration-200 ease-in ${scrolled ? "max-w-[70px]" : "max-w-[85px]"}`}
                                 fetchPriority="high"
                             />
                         </Link>
@@ -41,7 +58,7 @@ function Header() {
                                     <Link
                                         href="/#about"
                                         scroll={true}
-                                        className="max-lg:py-4 max-lg:block text-white text-lg font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
+                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
                                     >
                                         Sobre
                                     </Link>
@@ -51,7 +68,7 @@ function Header() {
                                     <Link
                                         href="/#services"
                                         scroll={true}
-                                        className="max-lg:py-4 max-lg:block text-white text-lg font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
+                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
                                     >
                                         Serviços
                                     </Link>  
@@ -61,7 +78,7 @@ function Header() {
                                     <Link
                                         href="/#cases"
                                         scroll={true}
-                                        className="max-lg:py-4 max-lg:block text-white text-lg font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
+                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
                                     >
                                         Cases
                                     </Link>
@@ -71,7 +88,7 @@ function Header() {
                                     <Link
                                         href="/#skills"
                                         scroll={true}
-                                        className="max-lg:py-4 max-lg:block text-white text-lg font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
+                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
                                     >
                                         Habilidades</Link>
                                 </li>
@@ -80,7 +97,7 @@ function Header() {
                                     <Link
                                         href="/#contact"
                                         scroll={true}
-                                        className="max-lg:py-4 max-lg:block text-white text-lg font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
+                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
                                     >
                                         Contato</Link>
                                 </li>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function About () {
     return (
-        <section className="flex items-center" id="about">
+        <section className="flex items-center bg-gradient-to-b from-black-800 to-black-900" id="about">
             <div className="container">
                 <AboutAnimatedWrapper
                 >
@@ -14,7 +14,7 @@ function About () {
                             alt="Logo do desenvolvedor front-end Douglas Rocha"
                             width={365}
                             height={535}
-                            className="w-full max-w-[365px] h-auto mx-auto lg:mx-0"
+                            className="w-full max-w-[365px] h-auto mx-auto lg:mx-0 rounded-tl-4xl rounded-br-4xl"
                             loading="lazy"
                         />
                     </div>

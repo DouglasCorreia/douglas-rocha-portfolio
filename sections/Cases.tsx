@@ -36,7 +36,7 @@ function Cases () {
     const activeCase = cases.find((c) => c.id === selectedCase);
 
     return (
-       <section id="cases">
+       <section id="cases" className="bg-gradient-to-b from-black-800 to-black-900">
             <div className="container">
                 <div className="mb-12">
                     <h2 className="title">Cases</h2>
@@ -73,7 +73,7 @@ function Cases () {
                                             {c.tags.map((tag, i) => (
                                                 <li
                                                     key={ i }
-                                                    className="px-3 py-1 rounded-full bg-saffron-400 text-sm text-black-800"
+                                                    className="px-3 py-1 rounded-full bg-anakiwa-300 text-sm text-black-800"
                                                 >
                                                     {
                                                         tag.url 
@@ -91,7 +91,7 @@ function Cases () {
                                         onClick={() => {
                                             setSelectedCase(c.id)
                                         }}
-                                        className="mx-auto cursor-pointer flex flex-wrap items-center justify-center bg-black-700 text-white px-6 h-9 text-md font-normal rounded-full"
+                                        className="mx-auto cursor-pointer flex flex-wrap items-center justify-center bg-white text-black-700 border-2 border-black-700 px-6 h-9 text-md font-semibold rounded-full transition-colors duration-200 ease-in lg:hover:bg-black-700 lg:hover:text-white"
                                     >
                                         Ver mais detalhes
                                     </button>
@@ -140,7 +140,7 @@ function Cases () {
                                         {activeCase.tags.map((tag, i) => (
                                             <span
                                             key={i}
-                                            className="px-3 py-1 rounded-full bg-saffron-400 text-xs text-black"
+                                            className="px-3 py-1 rounded-full bg-anakiwa-300 text-xs text-black"
                                             >
                                                 {
                                                     tag.url 

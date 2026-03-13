@@ -176,9 +176,9 @@ function Contact () {
                             </motion.button>
                         </form>
 
-                        {status === "success" && <p className="mt-4 block leading-none text-center py-3.5 text-white bg-green-400">Mensagem enviada!</p>}
-                        {status === "error-recaptcha" && <p className="mt-4 block leading-none text-center py-3.5 text-white bg-red-400">Por favor, confirme que você não é um robô!</p>}
-                        {status === "error" && <p className="mt-4 block leading-none text-center py-3.5 text-white bg-red-400">Erro ao enviar.</p>}
+                        {status === "success" && <p className="rounded-full mt-4 block leading-none text-center py-3.5 text-white bg-green-400">Mensagem enviada!</p>}
+                        {status === "error-recaptcha" && <p className="rounded-full mt-4 block leading-none text-center py-3.5 text-white bg-red-400">Por favor, confirme que você não é um robô!</p>}
+                        {status === "error" && <p className="rounded-full mt-4 block leading-none text-center py-3.5 text-white bg-red-400">Erro ao enviar.</p>}
                     </div>
                 </motion.div>
             </div>

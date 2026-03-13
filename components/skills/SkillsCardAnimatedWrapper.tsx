@@ -7,7 +7,6 @@ import SkillsCardAnimated from "./SkillsCardAnimated";
 type SkillsCardAnimatedWrapperProps = {
   children: ReactNode;
   index: number;
-  inView: boolean;
 };
 
 export default function SkillsCardAnimatedWrapper({ children, index }: SkillsCardAnimatedWrapperProps) {

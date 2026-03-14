@@ -9,18 +9,20 @@ function About () {
                 <AboutAnimatedWrapper
                 >
                     <div className="col-span-2 lg:col-span-1">
-                        <Image
-                            src="/img/image-profile-work.jpg"
-                            alt="Logo do desenvolvedor front-end Douglas Rocha"
-                            width={365}
-                            height={535}
-                            className="w-full max-w-[365px] h-auto mx-auto lg:mx-0 rounded-tl-4xl rounded-br-4xl"
-                            loading="lazy"
-                        />
+                        <div className="relative w-full max-w-[365px] before:content-[''] before:absolute before:w-full before:h-full before:inset-0 before:border before:border-white before:top-[18px] before:left-[34px] before:rounded-tl-4xl before:rounded-br-4xl">
+                            <Image
+                                src="/img/image-profile-work.jpg"
+                                alt="Logo do desenvolvedor front-end Douglas Rocha"
+                                width={365}
+                                height={535}
+                                className="w-full max-w-[365px] h-auto mx-auto lg:mx-0 rounded-tl-4xl rounded-br-4xl relative z-10"
+                                loading="lazy"
+                            />
+                        </div>
                     </div>
 
                     <div className="col-span-2 lg:col-span-1">
-                        <h2 className="block leading-none text-white text-4xl font-bold uppercase mb-6">Sobre mim</h2>
+                        <h2 className="block leading-none text-white text-4xl font-medium mb-6">Sobre mim</h2>
 
                         <p className="block leading-6 text-white text-md mb-2">
                             Desenvolvedor Front-End com quase 8 anos de experiência transformando ideias em e-commerces de alta performance que geram resultados reais para o negócio.    

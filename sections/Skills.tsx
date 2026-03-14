@@ -1,107 +1,18 @@
 import SkillsCard from "@/components/skills/SkillsCard";
 import SkillsCardAnimatedWrapper from "@/components//skills/SkillsCardAnimatedWrapper";
+import skillsData from '../data/skills.json';
+
+type SkillsSubtitles = {
+    name: string;
+}
+
+type Skills = {
+    title: string;
+    subtitles: SkillsSubtitles[];
+}
 
 function Skills() {
-    const skills = [
-        {
-            title: "Front-end",
-            subtitles: [
-                {
-                    name: "HTML"
-                },
-                {
-                    name: "CSS"
-                },
-                {
-                    name: "JavaScript"
-                },
-                {
-                    name: "TypeScript"
-                },
-                {
-                    name: "SCSS"
-                },
-                {
-                    name: "SASS"
-                },
-                {
-                    name: "React"
-                },
-                {
-                    name: "Tailwind CSS"
-                },
-                {
-                    name: "Wordpress"
-                }
-            ]
-        },
-        {
-            title: "Habilidades Essênciais",
-            subtitles: [
-                {
-                    name: "Desenvolvimento front-end"
-                },
-                {
-                    name: "UX/UI"
-                },
-                {
-                    name: "SEO"
-                },
-                {
-                    name: "SEO on-page"
-                },
-                {
-                    name: "Page Speed"
-                },
-                {
-                    name: "Desenvolvimento Responsivo"
-                }
-            ]
-        },
-        {
-            title: "Plataformas de e-commerce",
-            subtitles: [
-                {
-                    name: "Wake Commerce"
-                },
-                {
-                    name: "Tray Commerce"
-                },
-                {
-                    name: "UAPPI"
-                },
-                {
-                    name: "Olist VNDA"
-                },
-                {
-                    name: "Yampi"
-                },
-                {
-                    name: "Nuvem Shop"
-                },
-                {
-                    name: "WooCommerce"
-                }
-            ]
-        },
-        {
-            title: "Controle de versão",
-            subtitles: [
-                {
-                    name: "Git"
-                },
-                {
-                    name: "GitHub"
-                },
-                {
-                    name: "GitLab"
-                },
-                {
-                    name: "Bitbucket"
-                },
-            ]
-        }
-    ]
+    const skills:Skills[] = skillsData;
 
     return (
         <section id="skills" className="bg-gradient-to-b from-black-900 to-black-800">

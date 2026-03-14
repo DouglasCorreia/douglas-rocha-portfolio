@@ -15,7 +15,7 @@ export default function SkillsCardAnimated({ children, index, inView }: SkillsCa
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: index * 0.2 }}
-            className="shadow-2xl border-1 border-black-500 rounded-2xl p-4 h-full"
+            className="shadow-2xl border-1 border-black-500 rounded-lg p-4 h-full"
         >
             {children}
         </motion.div>

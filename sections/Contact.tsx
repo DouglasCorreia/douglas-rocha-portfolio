@@ -103,7 +103,8 @@ function Contact () {
                         variants={fadeLeft}
                         className="col-span-2 lg:col-span-1"
                     >
-                        <p className="block leading-6 text-white text-md">Se você está em busca de um desenvolvedor front-end que combine excelência técnica com visão estratégica de produto, posso ajudar a transformar suas ideias em experiências digitais eficientes, modernas e orientadas a resultados. Vamos conversar sobre como posso contribuir para o sucesso do seu projeto.</p>
+                        <p className="block leading-6 text-white text-md
+                        ">Se você está em busca de um desenvolvedor front-end que combine excelência técnica com visão estratégica de produto, posso ajudar a transformar suas ideias em experiências digitais eficientes, modernas e orientadas a resultados. Vamos conversar sobre como posso contribuir para o sucesso do seu projeto.</p>
                     </motion.div>
 
                     <div className="col-span-2 lg:col-span-1">
@@ -168,7 +169,7 @@ function Contact () {
                                 custom={3}
                                 variants={fadeUp}
                                 type="submit"
-                                className="flex items-center justify-center h-12 rounded-4xl bg-white cursor-pointer text-sm font-bold uppercase duration-200 transition-colors lg:hover:bg-anakiwa-300"
+                                className="flex items-center justify-center h-12 rounded-4xl bg-white cursor-pointer text-sm font-bold uppercase duration-200 transition-colors lg:hover:bg-amber-300"
                             >
                                 {
                                     status === "loading" ? "Enviando..." : "Enviar"    

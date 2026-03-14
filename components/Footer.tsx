@@ -25,7 +25,7 @@ function Footer() {
                             <li className="leading-none">
                                 <Link
                                     href="/termos-de-uso"
-                                    className="flex items-center justify-center lg:justify-start gap-x-1 text-sm text-white transition-colors duration-200 lg:hover:text-anakiwa-300"
+                                    className="inline-block lg:justify-start gap-x-1 text-sm text-white transition-colors duration-200 lg:hover:text-amber-300"
                                 >
                                     Termos de uso
                                 </Link>
@@ -43,7 +43,7 @@ function Footer() {
                                     target="_blank"
                                     rel="noreferer noopener"
                                     aria-label="Link para o celular"
-                                    className="flex items-center justify-center lg:justify-start gap-x-1 text-sm text-white transition-colors duration-200 lg:hover:text-anakiwa-300"
+                                    className="flex items-center justify-center lg:justify-start gap-x-1 max-w-max text-sm text-white transition-colors duration-200 lg:hover:text-amber-300"
                                 >
                                     <FaWhatsapp />
 
@@ -56,7 +56,7 @@ function Footer() {
                                     target="_blank"
                                     rel="noreferer noopener"
                                     aria-label="Link para o e-mail"
-                                    className="flex items-center justify-center lg:justify-start gap-x-1 text-sm text-white transition-colors duration-200 lg:hover:text-anakiwa-300"
+                                    className="flex items-center justify-center lg:justify-start gap-x-1 max-w-max text-sm text-white transition-colors duration-200 lg:hover:text-amber-300"
                                 >
                                     <FaRegEnvelope />
 
@@ -69,7 +69,7 @@ function Footer() {
                                     target="_blank"
                                     rel="noreferer noopener"
                                     aria-label="Link para o linkedin"
-                                    className="flex items-center justify-center lg:justify-start gap-x-1 text-sm text-white transition-colors duration-200 lg:hover:text-anakiwa-300"
+                                    className="flex items-center justify-center lg:justify-start gap-x-1 max-w-max text-sm text-white transition-colors duration-200 lg:hover:text-amber-300"
                                 >
                                     <FaLinkedinIn />
 

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-roboto: 'Roboto', 'system-ui', 'sans-serif';
+  --font-raleway: 'Raleway', 'system-ui', 'sans-serif';
   --font-montserrat: 'Montserrat', 'system-ui', 'sans-serif';
 
   --color-anakiwa-50: #f0f9ff;
@@ -16,17 +16,17 @@
   --color-anakiwa-900: #0a4c70;
   --color-anakiwa-950: #06304b;
 
-  --color-saffron-50: #fefde8;
-  --color-saffron-100: #fffcc2;
-  --color-saffron-200: #fff788;
-  --color-saffron-300: #ffe944;
-  --color-saffron-400: #fed711;
-  --color-saffron-500: #efbf04;
-  --color-saffron-600: #ce9300;
-  --color-saffron-700: #a46804;
-  --color-saffron-800: #87520c;
-  --color-saffron-900: #734310;
-  --color-saffron-950: #432205;
+  --color-affair-50: #faf6fd;
+  --color-affair-100: #f5edfa;
+  --color-affair-200: #eadaf4;
+  --color-affair-300: #dabdea;
+  --color-affair-400: #c595dd;
+  --color-affair-500: #ab6bca;
+  --color-affair-600: #8647a1;
+  --color-affair-700: #773c8f;
+  --color-affair-800: #633375;
+  --color-affair-900: #542e61;
+  --color-affair-950: #33143e;
 
   --color-black-50: #fafafa;
   --color-black-100: #f5f5f5;
@@ -39,18 +39,6 @@
   --color-black-800: #292929;
   --color-black-900: #1a1a1a;
   --color-black-950: #000000;
-
-  --color-woodsmoke-50: #fafafa;
-  --color-woodsmoke-100: #f5f5f5;
-  --color-woodsmoke-200: #e6e6e6;
-  --color-woodsmoke-300: #d3d3d3;
-  --color-woodsmoke-400: #a3a3a3;
-  --color-woodsmoke-500: #727272;
-  --color-woodsmoke-600: #535353;
-  --color-woodsmoke-700: #404040;
-  --color-woodsmoke-800: #272727;
-  --color-woodsmoke-900: #131313;
-  --color-woodsmoke-950: #0b0b0b;
 
   --color-ebony-clay-50: #f4f6fa;
   --color-ebony-clay-100: #e6ebf3;
@@ -74,6 +62,18 @@
   --breakpoint-md: 992px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1200px;
+
+  @keyframes typing {
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
 }
 
 @layer utilities {
@@ -82,11 +82,16 @@
   }
 
   .title{
-    @apply block leading-none text-white text-center text-4xl font-bold uppercase;
+    @apply block leading-none text-white text-center text-4xl font-medium font-raleway;
   }
 
   .input-field{
-    @apply flex flex-wrap items-center w-full h-12 rounded-xl text-white bg-black-700 border-none px-4 py-2 placeholder:text-white;
+    @apply flex flex-wrap items-center w-full h-12 rounded-xl text-white font-raleway bg-black-700 border-none px-4 py-2 placeholder:text-white;
+  }
+
+  .typewriter {
+    @apply overflow-hidden whitespace-nowrap border-r-4 border-white w-0 inline-block;
+    animation: typing 3s steps(30, end) infinite alternate, blink 1s step-end infinite;
   }
 }
 
@@ -143,7 +148,7 @@ html {
 
 body {
   background-color: var(--color-black-800);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-raleway);
 }
 
 ul, li{

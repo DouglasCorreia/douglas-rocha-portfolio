@@ -3,15 +3,17 @@ import { FaLinkedinIn, FaGithub, FaGoogle, FaWhatsapp } from "react-icons/fa";
 function Hero () {
     return (
        <section className="min-h-dvh relative" id="hero">
-            <div className="parallax-bg absolute left-0 top-0 h-dvh w-full bg-[url('https://douglas-rocha-portfolio.vercel.app/img/banner-hero.jpg')] bg-center bg-fixed bg-cover z-10 grayscale-[60%]"></div>
+            <div className="parallax-bg absolute left-0 top-0 h-dvh w-full bg-[url('https://douglas-rocha-portfolio.vercel.app/img/banner-hero.jpg')] bg-center lg:bg-fixed bg-cover z-10 grayscale-[60%]"></div>
 
             <div className="container absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <h1 className="block leading-none text-center lg:text-left text-white text-[64px] sm:text-8xl uppercase font-bold">
+                <h1 className="block leading-none text-center lg:text-left text-white text-[64px] sm:text-8xl uppercase font-bold font-montserrat">
                     <span className="block leading-none font-normal text-5xl sm:text-7xl">Douglas</span>
                     
                     Rocha
 
-                    <span className="block text-[15px] sm:text-[23px] tracking-[0.3px]">Desenvolvedor front-end</span>
+                    <span className="block text-[15px] sm:text-[23px] tracking-[0.3px] w-max">
+                        <span className="typewriter">Desenvolvedor front-end</span>
+                    </span>
                 </h1>
 
                 <div className="flex items-center justify-center lg:justify-start gap-4 mt-4">

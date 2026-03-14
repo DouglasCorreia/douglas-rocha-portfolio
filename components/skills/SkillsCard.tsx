@@ -19,7 +19,7 @@ function SkillsCard({ title, subtitles }:SkillsCardProps){
                             subtitles.map((subtitle, index) => (
                                 <li
                                     key={index}
-                                    className="basis-auto border border-white border-solid rounded-[120px] px-4 py-2 w-max text-white font-semibold
+                                    className="basis-auto border border-white border-solid rounded-lg px-4 py-2 w-max text-white font-normal
                                      text-sm"
                                 >
                                     { subtitle.name }

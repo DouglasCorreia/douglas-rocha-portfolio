@@ -58,7 +58,7 @@ function Header() {
                                     <Link
                                         href="/#about"
                                         scroll={true}
-                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
+                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-amber-300"
                                     >
                                         Sobre
                                     </Link>
@@ -68,7 +68,7 @@ function Header() {
                                     <Link
                                         href="/#services"
                                         scroll={true}
-                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
+                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-amber-300"
                                     >
                                         Serviços
                                     </Link>  
@@ -78,7 +78,7 @@ function Header() {
                                     <Link
                                         href="/#cases"
                                         scroll={true}
-                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
+                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-amber-300"
                                     >
                                         Cases
                                     </Link>
@@ -88,7 +88,7 @@ function Header() {
                                     <Link
                                         href="/#skills"
                                         scroll={true}
-                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
+                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-amber-300"
                                     >
                                         Habilidades</Link>
                                 </li>
@@ -97,7 +97,7 @@ function Header() {
                                     <Link
                                         href="/#contact"
                                         scroll={true}
-                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-anakiwa-300"
+                                        className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-amber-300"
                                     >
                                         Contato</Link>
                                 </li>

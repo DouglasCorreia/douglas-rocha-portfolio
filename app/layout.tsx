@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Roboto, Montserrat } from "next/font/google";
+import { Raleway, Montserrat } from "next/font/google";
 import "./globals.css";
 
-const roboto = Roboto({
-  variable: "--font-roboto",
+const raleway = Raleway({
+  variable: "--font-raleway",
   subsets: ["latin"],
 });
 
@@ -13,7 +13,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "DRF - Doug Rock Front-end",
+  title: {
+    default: "DRF - Doug Rock Front-end",
+    template: "%s | DRF",
+  },
   description: "Desenvolvedor Front-End com quase 8 anos de experiência transformando ideias em e-commerces, sites institucionais e blogs de alta performance que geram resultados reais para o negócio.",
 };
 
@@ -28,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${roboto.variable} ${montserrat.variable} antialiased`}
+        className={`${raleway.variable} ${montserrat.variable} antialiased`}
       >
         <Header />
 

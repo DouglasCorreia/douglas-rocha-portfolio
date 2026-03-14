@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Termos de Uso",
+  description: "Leia os termos de uso do site de Douglas Rocha, desenvolvedor front-end."
+};
+
 export default function AboutPage() {
   return (
     <main>

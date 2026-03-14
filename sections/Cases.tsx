@@ -49,7 +49,7 @@ function Cases () {
                         cases.slice(0,6).map((c, index) => (
                             <motion.div
                                 key={c.id}
-                                className="col-span-12 sm:col-span-6 lg:col-span-4 case-item bg-white rounded-lg flex flex-col justify-between"
+                                className="col-span-12 sm:col-span-6 lg:col-span-4 case-item rounded-lg flex flex-col"
                                 custom={index}
                                 initial="hidden"
                                 whileInView="visible"
@@ -62,18 +62,18 @@ function Cases () {
                                         alt={`Imagem do projeto ${c.title}`}
                                         width={ 379 }
                                         height={ 213 }
-                                        className="w-full h-auto rounded-lg"
+                                        className="w-full h-auto rounded-lg rounded-b-none"
                                         loading="lazy"
                                     />
                                 </div>
 
-                                <div className="case-content p-4">
+                                <div className="case-content p-4 basis-full flex flex-col justify-between border rounded-b-lg border-white">
                                     <div className="case-tags mb-3">
                                         <ul className="flex flex-wrap gap-2">
                                             {c.tags.map((tag, i) => (
                                                 <li
                                                     key={ i }
-                                                    className="px-3 py-1 rounded-full bg-anakiwa-300 text-sm text-black-800"
+                                                    className="px-3 py-1 rounded-lg border border-white text-sm text-white"
                                                 >
                                                     {
                                                         tag.url 
@@ -85,16 +85,18 @@ function Cases () {
                                         </ul>
                                     </div>
 
-                                    <h3 className="text-black-800 font-bold text-xl text-center mb-3">{ c.title }</h3>
+                                    <div className="card-title">
+                                        <h3 className="text-white text-xl text-center mb-3">{ c.title }</h3>
 
-                                    <button
-                                        onClick={() => {
-                                            setSelectedCase(c.id)
-                                        }}
-                                        className="mx-auto cursor-pointer flex flex-wrap items-center justify-center bg-white text-black-700 border-2 border-black-700 px-6 h-9 text-md font-semibold rounded-full transition-colors duration-200 ease-in lg:hover:bg-black-700 lg:hover:text-white"
-                                    >
-                                        Ver mais detalhes
-                                    </button>
+                                        <button
+                                            onClick={() => {
+                                                setSelectedCase(c.id)
+                                            }}
+                                            className="mx-auto cursor-pointer flex flex-wrap items-center justify-center border border-white text-white border-2 border-black-700 px-6 h-9 text-md font-normal rounded-full transition-colors duration-200 ease-in lg:hover:bg-white lg:hover:text-black-800"
+                                        >
+                                            Ver mais detalhes
+                                        </button>
+                                    </div>
                                 </div>
                             </motion.div>
                         ))
@@ -140,7 +142,7 @@ function Cases () {
                                         {activeCase.tags.map((tag, i) => (
                                             <span
                                             key={i}
-                                            className="px-3 py-1 rounded-full bg-anakiwa-300 text-xs text-black"
+                                            className="px-3 py-1 rounded-full border border-black-800 text-xs text-black-800"
                                             >
                                                 {
                                                     tag.url 
@@ -159,9 +161,9 @@ function Cases () {
                                         href={activeCase.link}
                                         target="_blank"
                                         rel="noopener noreferer"
-                                        className="inline-block bg-black-700 text-md text-white px-6 py-2 rounded-full mt-4"
+                                        className="inline-block bg-black-800 text-md text-white px-6 py-2 rounded-full mt-4"
                                     >
-                                        Visitar projeto
+                                        Ver projeto
                                     </a>
                                 </div>
                             </motion.div>

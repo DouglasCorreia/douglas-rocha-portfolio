@@ -11,7 +11,7 @@ function Hero () {
                     
                     Rocha
 
-                    <span className="block text-[15px] sm:text-[23px] tracking-[0.3px] w-max">
+                    <span className="block text-[15px] sm:text-[23px] tracking-[0.3px] w-max max-lg:mx-auto">
                         <span className="typewriter">Desenvolvedor front-end</span>
                     </span>
                 </h1>

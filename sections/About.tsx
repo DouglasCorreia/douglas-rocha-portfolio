@@ -9,7 +9,7 @@ function About () {
                 <AboutAnimatedWrapper
                 >
                     <div className="col-span-2 lg:col-span-1">
-                        <div className="relative w-full max-w-[365px] before:content-[''] before:absolute before:w-full before:h-full before:inset-0 before:border before:border-white before:top-[18px] before:left-[34px] before:rounded-tl-4xl before:rounded-br-4xl">
+                        <div className="relative w-full max-w-[365px] before:content-[''] before:absolute before:w-full before:h-full before:inset-0 before:border before:border-white before:top-[18px] sm:before:top-[18px] before:left-[14px] sm:before:left-[34px] before:rounded-tl-4xl before:rounded-br-4xl">
                             <Image
                                 src="/img/image-profile-work.jpg"
                                 alt="Logo do desenvolvedor front-end Douglas Rocha"

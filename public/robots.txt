@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://douglas-rocha-portfolio.vercel.app/
+
+# Sitemaps
+Sitemap: https://douglas-rocha-portfolio.vercel.app/sitemap.xml

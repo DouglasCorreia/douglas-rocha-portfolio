@@ -17,7 +17,7 @@ export default function SkillsCardAnimatedWrapper({ children, index }: SkillsCar
 
     return (
         <div
-            className="col-span-12 sm:col-span-6 lg:col-span-4"
+            className="col-span-6 sm:col-span-3 lg:col-span-2"
             ref={ref}
         >
             <SkillsCardAnimated index={index} inView={inView}>

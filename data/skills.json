@@ -1,100 +1,62 @@
 [
-    {
-        "title": "Front-end",
-        "subtitles": [
-            {
-                "name": "HTML"
-            },
-            {
-                "name": "CSS"
-            },
-            {
-                "name": "JavaScript"
-            },
-            {
-                "name": "TypeScript"
-            },
-            {
-                "name": "SCSS"
-            },
-            {
-                "name": "SASS"
-            },
-            {
-                "name": "React"
-            },
-            {
-                "name": "Tailwind CSS"
-            },
-            {
-                "name": "Wordpress"
-            }
-        ]
-    },
-    {
-        "title": "Habilidades Essênciais",
-        "subtitles": [
-            {
-                "name": "Desenvolvimento front-end"
-            },
-            {
-                "name": "UX/UI"
-            },
-            {
-                "name": "SEO"
-            },
-            {
-                "name": "SEO on-page"
-            },
-            {
-                "name": "Page Speed"
-            },
-            {
-                "name": "Desenvolvimento Responsivo"
-            }
-        ]
-    },
-    {
-        "title": "Plataformas de e-commerce",
-        "subtitles": [
-            {
-                "name": "Wake Commerce"
-            },
-            {
-                "name": "Tray Commerce"
-            },
-            {
-                "name": "UAPPI"
-            },
-            {
-                "name": "Olist VNDA"
-            },
-            {
-                "name": "Yampi"
-            },
-            {
-                "name": "Nuvem Shop"
-            },
-            {
-                "name": "WooCommerce"
-            }
-        ]
-    },
-    {
-        "title": "Controle de versão",
-        "subtitles": [
-            {
-                "name": "Git"
-            },
-            {
-                "name": "GitHub"
-            },
-            {
-                "name": "GitLab"
-            },
-            {
-                "name": "Bitbucket"
-            }
-        ]
-    }
+  {
+    "title": "HTML",
+    "icon": "SiCss"
+  },
+  {
+    "title": "CSS",
+    "icon": "SiCss"
+  },
+  {
+    "title": "JavaScript",
+    "icon": "SiJavascript"
+  },
+  {
+    "title": "TypeScript",
+    "icon": "SiTypescript"
+  },
+  {
+    "title": "React",
+    "icon": "SiReact"
+  },
+  {
+    "title": "GIT",
+    "icon": "SiGit"
+  },
+  {
+    "title": "NPM",
+    "icon": "SiNpm"
+  },
+  {
+    "title": "Next.js",
+    "icon": "SiNextdotjs"
+  },
+  {
+    "title": "Tailwind CSS",
+    "icon": "SiTailwindcss"
+  },
+  {
+    "title": "SCSS/SASS",
+    "icon": "SiSass"
+  },
+  {
+    "title": "GraphQL",
+    "icon": "SiGraphql"
+  },
+  {
+    "title": "Figma",
+    "icon": "SiFigma"
+  },
+  {
+    "title": "Wordpress",
+    "icon": "SiWordpress"
+  },
+  {
+    "title": "Vite",
+    "icon": "SiVite"
+  },
+  {
+    "title": "Webpack",
+    "icon": "SiWebpack"
+  }
 ]

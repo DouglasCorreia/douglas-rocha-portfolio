@@ -1,34 +1,16 @@
-type Subtitle = {
-  name: string;
-}
-
 type SkillsCardProps = {
-    title: string;
-    subtitles: Subtitle[];
+  title: string;
+  icon: React.ComponentType<{ size?: number }>;
 }
 
-function SkillsCard({ title, subtitles }:SkillsCardProps){
+function SkillsCard({ title, icon: Icon }:SkillsCardProps){
     return(
         <>
-            <h3 className="block leading-none text-white font-semibold text-lg mb-4 text-center sm:text-left">{ title }</h3>
-                
-            {
-                subtitles.length > 0 && (
-                    <ul className="flex flex-wrap justify-center sm:justify-start gap-3">
-                        {
-                            subtitles.map((subtitle, index) => (
-                                <li
-                                    key={index}
-                                    className="basis-auto border border-white border-solid rounded-lg px-4 py-2 w-max text-white font-normal
-                                     text-sm"
-                                >
-                                    { subtitle.name }
-                                </li>
-                            ))
-                        }
-                    </ul>
-                )
-            }
+            <div className="text-center flex justify-center text-black-400 mb-4">
+                <Icon size={40} />
+            </div>
+
+            <h3 className="block leading-none text-black-400 font-medium text-md text-center">{ title }</h3>
         </>
     )
 }

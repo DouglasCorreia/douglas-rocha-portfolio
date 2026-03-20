@@ -86,11 +86,11 @@ function Header() {
 
                                 <li>
                                     <Link
-                                        href="/#skills"
+                                        href="/#technologies"
                                         scroll={true}
                                         className="max-lg:py-4 max-lg:block text-white text-md font-semibold duration-200 transition-colors lg:hover:text-amber-300"
                                     >
-                                        Habilidades</Link>
+                                        Tecnologias</Link>
                                 </li>
 
                                 <li>

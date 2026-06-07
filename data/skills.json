@@ -20,6 +20,10 @@
     "icon": "SiReact"
   },
   {
+    "title": "Vue",
+    "icon": "SiVuedotjs"
+  },
+  {
     "title": "GIT",
     "icon": "SiGit"
   },

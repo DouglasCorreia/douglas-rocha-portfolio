@@ -1,7 +1,7 @@
 import SkillsCard from "@/components/skills/SkillsCard";
 import SkillsCardAnimatedWrapper from "@/components//skills/SkillsCardAnimatedWrapper";
 import skillsData from '../data/skills.json';
-import { SiHtml5, SiCss, SiJavascript, SiTypescript, SiReact, SiGit, SiNpm, SiNextdotjs, SiTailwindcss, SiSass, SiGraphql, SiFigma, SiWordpress, SiVite, SiWebpack } from "react-icons/si";
+import { SiHtml5, SiCss, SiJavascript, SiTypescript, SiReact, SiVuedotjs, SiGit, SiNpm, SiNextdotjs, SiTailwindcss, SiSass, SiGraphql, SiFigma, SiWordpress, SiVite, SiWebpack } from "react-icons/si";
 
 const iconMap: Record<string, React.ComponentType<{ size?: number }>> = {
   "HTML": SiHtml5,
@@ -9,6 +9,7 @@ const iconMap: Record<string, React.ComponentType<{ size?: number }>> = {
   "JavaScript": SiJavascript,
   "TypeScript": SiTypescript,
   "React": SiReact,
+  "Vue": SiVuedotjs,
   "GIT": SiGit,
   "NPM": SiNpm,
   "Next.js": SiNextdotjs,

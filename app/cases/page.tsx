@@ -1,10 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import casesData from '../data/cases.json';
+import casesData from '../../data/cases.json';
 
 type CaseTagsItem = {
     title: string;
@@ -37,7 +36,7 @@ function Cases () {
     const activeCase = cases.find((c) => c.id === selectedCase);
 
     return (
-       <section id="cases" className="bg-gradient-to-b from-black-800 to-black-900">
+       <section id="cases" className="!pt-36 bg-gradient-to-b from-black-800 to-black-900">
             <div className="container">
                 <div className="mb-12">
                     <h2 className="title">Cases</h2>
@@ -47,7 +46,7 @@ function Cases () {
 
                 <div className="grid grid-cols-12 gap-4">
                     {
-                        cases.slice(0,6).map((c, index) => (
+                        cases.map((c, index) => (
                             <motion.div
                                 key={c.id}
                                 className="col-span-12 sm:col-span-6 lg:col-span-4 case-item rounded-lg flex flex-col"
@@ -102,15 +101,6 @@ function Cases () {
                             </motion.div>
                         ))
                     }
-                </div>
-
-                <div className="mb-12 text-center mt-7">
-                   <Link
-                        href="/cases"
-                        className="mx-auto w-max cursor-pointer flex flex-wrap items-center justify-center border border-white text-white border-2 border-black-700 px-6 h-9 text-md font-normal rounded-full transition-colors duration-200 ease-in lg:hover:bg-white lg:hover:text-black-800"
-                    >
-                        Ver todos os cases
-                    </Link>
                 </div>
 
                 <AnimatePresence>

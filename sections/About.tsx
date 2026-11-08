@@ -24,23 +24,13 @@ function About () {
                     <div className="col-span-2 lg:col-span-1">
                         <h2 className="block leading-none text-white text-4xl font-medium mb-6">Sobre mim</h2>
 
-                        <p className="block leading-6 text-white text-md mb-2">
-                            Desenvolvedor Front-End com quase 8 anos de experiência transformando ideias em e-commerces de alta performance que geram resultados reais para o negócio.    
-                        </p>
+                        <p className="block leading-6 text-white text-md mb-2">Desenvolvedor Front-End com 8 anos de experiência criando aplicações web, interfaces de alta performance e produtos digitais voltados à melhor experiência do usuário. Atualmente, meu foco está no desenvolvimento com React, TypeScript e JavaScript, construindo aplicações modernas, escaláveis e de fácil manutenção.</p>
 
-                        <p className="block leading-6 text-white text-md mb-2">
-                           Especializo-me em construir experiências digitais que convertem: 
-                        </p>
+                        <p className="block leading-6 text-white text-md mb-2">Tenho experiência no desenvolvimento de interfaces responsivas, reutilização de componentes, integração com APIs REST, otimização de performance e aplicação de boas práticas de desenvolvimento, sempre buscando código limpo, organizado e sustentável para o crescimento do produto.</p>
 
-                        <ul className="pl-4 text-white mb-4 mt-4 *:mb-2 *:last-of-type:mb-0">
-                            <li className="list-disc!">Desenvolvimento de interfaces responsivas para plataformas Wake Commerce, Tray Commerce, Olist VNDA, Yampi e Nuvem Shop;</li>
-                            <li className="list-disc!">Otimização de performance e aplicação de SEO técnico para maximizar conversão e retenção;</li>
-                            <li className="list-disc!">Criação de sites institucionais, blogs e landing pages com foco em jornada do usuário.</li>
-                        </ul>
+                        <p className="block leading-6 text-white text-md mb-2">Minha stack inclui React, TypeScript, JavaScript (ES6+), Tailwind CSS, HTML5, CSS3, Git, Vite, Webpack e Figma. Também possuo experiência com metodologias ágeis (Scrum e Kanban), versionamento de código e colaboração próxima com times de produto, design e back-end.</p>
 
-                        <p className="block leading-6 text-white text-md">
-                            Tenho sólida formação em SEO técnico e UX/UI, com certificações em HTML, CSS, SEO avançado e projetos front-end. Meu código é sempre organizado, escalável e orientado à sustentabilidade do produto.
-                        </p>
+                        <p className="block leading-6 text-white text-md">Ao longo da minha carreira, desenvolvi soluções para grandes operações de e-commerce utilizando plataformas como Wake Commerce, Tray Commerce, Olist VNDA, Yampi e Nuvem Shop. Essa experiência me proporcionou uma forte visão de negócio, conversão, SEO técnico e otimização da experiência do usuário, conhecimentos que aplico no desenvolvimento de qualquer produto digital.</p>
                     </div>
                 </AboutAnimatedWrapper>
             </div>
